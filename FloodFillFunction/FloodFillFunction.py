@@ -23,6 +23,12 @@ def flood_fill(input_board: List[str], old: str, new: str, x: int, y: int) -> Li
     Returns:
         List[str]: Modified board
     """
+    
+    # Input validation
+    if not (0 <= x < len(input_board) and 0 <= y < len(input_board[0])):
+        raise ValueError("Invalid x or y coordinates.")
+    if not (len(old) == 1 and len(new) == 1):
+        raise ValueError("Old and new values should be single characters.")
 
     queue = [(x, y)]
     visited = set()
