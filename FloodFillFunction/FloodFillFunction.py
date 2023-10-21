@@ -59,3 +59,7 @@ modified_board = flood_fill(input_board=board, old=".", new="~", x=5, y=12)
 
 for a in modified_board:
     print(a)
+
+modified_board = flood_fill(input_board=board, old=".", new="*", x=5, y=12)
+for a in modified_board:
+    print(a)
