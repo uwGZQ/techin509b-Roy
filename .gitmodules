@@ -1,0 +1,3 @@
+[submodule "techin509b-tictactoe"]
+	path = techin509b-tictactoe
+	url = git@github.com:uwGZQ/techin509b-tictactoe.git
